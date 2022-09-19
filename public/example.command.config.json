@@ -1,0 +1,121 @@
+[
+    {
+        "app": "my-etl",
+        "displayName": "My ETL",
+        "commands": [
+            {
+                "name": "export",
+                "displayTitle": "Export",
+                "description": "sdmnf sdfn sdf s,d flsdf",
+                "inputs": {
+                    "optional": [
+                        {
+                            "name": "region",
+                            "displayTitle": "Region",
+                            "selectOptions": [
+                                "ap-southeast-2",
+                                "eu-west-1"
+                            ]
+                        },
+                        {
+                            "name": "env",
+                            "displayTitle": "Environment",
+                            "selectOptions": ["dev", "sit", "uat", "stg", "prd"]
+                        },
+                        {
+                            "name": "profile",
+                            "displayTitle": "Profile",
+                            "selectOptions": ["cl-stg", "cl-prd"]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "import",
+                "displayTitle": "Import",
+                "description": "sdmnf sdfn sdf s,d flsdf",
+                "inputs": {
+                    "positional": [
+                        {
+                            "name": "databaseId",
+                            "displayTitle": "Database Id"
+                        },
+                        {
+                            "name": "userId",
+                            "displayTitle": "User Id"
+                        }
+                    ],
+                    "optional": [
+                        {
+                            "name": "region",
+                            "displayTitle": "Region",
+                            "selectOptions": [
+                                "ap-southeast-2",
+                                "eu-west-1"
+                            ]
+                        },
+                        {
+                            "name": "env",
+                            "displayTitle": "Environment",
+                            "selectOptions": ["dev", "sit", "uat", "stg", "prd"]
+                        },
+                        {
+                            "name": "profile",
+                            "displayTitle": "Profile",
+                            "selectOptions": ["cl-stg", "cl-prd"]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "app": "app2",
+        "commands": [
+            {
+                "name": "port-forward",
+                "displayTitle": "Port Forward",
+                "description": "sdmnf sdfn sdf s,d flsdf",
+                "inputs": {
+                    "optional": [
+                        {
+                            "name": "region",
+                            "displayTitle": "Region",
+                            "selectOptions": [
+                                "ap-southeast-2",
+                                "eu-west-1"
+                            ]
+                        },
+                        {
+                            "name": "env",
+                            "displayTitle": "Environment",
+                            "selectOptions": ["dev", "sit", "uat", "stg", "prd"]
+                        },
+                        {
+                            "name": "profile",
+                            "displayTitle": "Profile",
+                            "selectOptions": ["cl-stg", "cl-prd"]
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "cat",
+                "displayTitle": "Print File",
+                "description": "sdmnf sdfn sdf s,d flsdf",
+                "inputs": {
+                    "positional": [
+                        {
+                            "name": "fileName",
+                            "displayTitle": "File Name"
+                        },
+                        {
+                            "name": "filePath",
+                            "displayTitle": "File Path"
+                        }
+                    ]
+                }
+            }
+        ]
+    }
+]
